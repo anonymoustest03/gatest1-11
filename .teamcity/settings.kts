@@ -39,10 +39,6 @@ object Build : BuildType({
         root(DslContext.settingsRoot)
     }
 
-    requirements {
-            equals("teamcity.agent.name", "my-self-hosted-runner")
-    }
-
     steps {
         script {
             id = "simpleRunner"
