@@ -40,7 +40,7 @@ object Build : BuildType({
     }
 
     requirements {
-            equals("teamcity.agent.name", "Windows-Server-2022-Large")
+            equals("teamcity.agent.name", "Windows-Server-2022-XLarge")
     }
 
     steps {
