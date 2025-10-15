@@ -40,15 +40,14 @@ object Build : BuildType({
     }
 
     requirements {
-            equals("teamcity.agent.name", "Windows-Server-2022-XLarge")
+            equals("teamcity.agent.name", "Windows-Server-2022-Small")
     }
 
     steps {
         script {
             id = "simpleRunner"
             scriptContent = """
-                chmod +x calculate.sh
-                ./calculate.sh
+                timeout /t 600 /nobreak
             """.trimIndent()
         }
     }
