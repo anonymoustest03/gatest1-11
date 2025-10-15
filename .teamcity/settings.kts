@@ -47,7 +47,7 @@ object Build : BuildType({
         script {
             id = "simpleRunner"
             scriptContent = """
-                C:\Windows\System32\timeout.exe /t 600 /nobreak
+                ping 127.0.0.1 -n 601 > nul
             """.trimIndent()
         }
     }
