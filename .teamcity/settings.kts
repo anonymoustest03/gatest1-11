@@ -54,6 +54,7 @@ object Build : BuildType({
 
     triggers {
         vcs {
+            quietPeriod = 0
         }
     }
 
