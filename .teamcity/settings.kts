@@ -40,14 +40,14 @@ object Build : BuildType({
     }
 
     requirements {
-            equals("teamcity.agent.name", "Windows-Server-2022-Small")
+            equals("teamcity.agent.name", "Windows-Server-2022-Large")
     }
 
     steps {
         script {
             id = "simpleRunner"
             scriptContent = """
-                ping 127.0.0.1 -n 601 > nul
+                ping 127.0.0.1 -n 601 
             """.trimIndent()
         }
     }
