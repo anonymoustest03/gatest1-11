@@ -53,8 +53,11 @@ object Build : BuildType({
     }
 
     triggers {
-        vcs {
-            quietPeriod = 0
+       vcs {
+            // This filter tells the trigger which branches to watch.
+            branchFilter = """
+                +:refs/pull/*
+            """.trimIndent()
         }
     }
 
