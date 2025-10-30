@@ -47,7 +47,7 @@ object Build : BuildType({
         script {
             id = "simpleRunner"
             scriptContent = """
-                ping 127.0.0.1 -n 601 
+                ping 127.0.0.1 -n 10 
             """.trimIndent()
         }
     }
